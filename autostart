@@ -1,0 +1,4 @@
+#!/bin/sh
+
+exec xautolock -detectsleep -locker 'i3lock -c 262626' &
+exec parcellite &

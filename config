@@ -113,8 +113,6 @@ bindsym $mod+Shift+greater exit
 # lock screen
 bindsym $mod+l exec i3lock -c 262626
 
-exec xautolock -detectsleep -locker 'i3lock -c 262626'
-
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -166,4 +164,13 @@ bindsym XF86AudioMute exec ponymix toggle
 # bindsym $mod+F12 exec scrot -s -d 3  -e 'mv $f ~/shots/'
 
 focus_follows_mouse no
+
+# from https://github.com/lkraav/dotfiles/blob/master/.i3/config
+# class border backgr. text indicator
+client.focused #859900 #859900 #fdf6e3 #2e9ef4
+client.focused_inactive #268bd2 #268bd2 #fdf6e3 #484e50
+client.unfocused #333333 #93a1a1 #fdf6e3 #292d2e
+
+# start the session
+exec --no-startup-id ~/.i3/autostart
 
