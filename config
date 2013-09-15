@@ -172,6 +172,10 @@ client.focused #859900 #859900 #fdf6e3 #2e9ef4
 client.focused_inactive #268bd2 #268bd2 #fdf6e3 #484e50
 client.unfocused #333333 #93a1a1 #fdf6e3 #292d2e
 
+# start gnome session
+# https://faq.i3wm.org/question/279/how-do-you-use-i3-comfortably/?answer=342#post-id-342
+exec /usr/bin/gnome-settings-daemon
+
 # start the session
 exec --no-startup-id ~/.i3/autostart
 
