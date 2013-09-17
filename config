@@ -179,3 +179,6 @@ exec /usr/bin/gnome-settings-daemon
 # start the session
 exec --no-startup-id ~/.i3/autostart
 
+# set the background color
+exec --no-startup-id xsetroot -solid "#cccccc"
+
