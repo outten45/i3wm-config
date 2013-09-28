@@ -23,6 +23,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+quotedbl kill
 
+
 # start dmenu (a program launcher)
 bindsym $mod+e exec dmenu_run
 
@@ -111,6 +112,9 @@ bindsym $mod+Shift+P restart
 # bindsym $mod+Shift+greater exit
 bindsym $mod+Control+0 exit
 
+# switch to greeter for other users
+bindsym $mod+Control+u exec dm-tool switch-to-greeter
+
 # lock screen
 bindsym $mod+l exec i3lock -c 262626
 
@@ -156,9 +160,9 @@ bar {
 }
 
 # control Volume with Volume Keys
-bindsym XF86AudioRaiseVolume exec ponymix increase 5
-bindsym XF86AudioLowerVolume exec ponymix decrease 5
-bindsym XF86AudioMute exec ponymix toggle
+#bindsym XF86AudioRaiseVolume exec ponymix increase 5
+#bindsym XF86AudioLowerVolume exec ponymix decrease 5
+#bindsym XF86AudioMute exec ponymix toggle
 
 # https://faq.i3wm.org/question/202/what-do-you-guys-use-for-printscreen/
 # this didn't work for some reason
