@@ -23,6 +23,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+quotedbl kill
 
+
 # start dmenu (a program launcher)
 bindsym $mod+e exec dmenu_run
 
@@ -113,6 +114,9 @@ bindsym $mod+Shift+P restart
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+greater exit
 bindsym $mod+Control+0 exit
+
+# switch to greeter for other users
+bindsym $mod+Control+u exec dm-tool switch-to-greeter
 
 # lock screen
 bindsym $mod+l exec i3lock -c 262626
