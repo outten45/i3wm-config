@@ -113,10 +113,13 @@ bindsym $mod+Shift+J reload
 bindsym $mod+Shift+P restart
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+greater exit
-bindsym $mod+Control+0 exit
+# bindsym $mod+Control+0 exit
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Control+0 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # switch to greeter for other users
-bindsym $mod+Control+u exec dm-tool switch-to-greeter
+# bindsym $mod+Control+u exec dm-tool switch-to-greeter
 
 # lock screen
 bindsym $mod+l exec i3lock -c 262626
