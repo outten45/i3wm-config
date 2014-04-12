@@ -1,6 +1,5 @@
 #!/bin/sh
 
+exec sh ~/.fehbg &
 exec xautolock -detectsleep -locker 'i3lock -c 262626' &
 exec parcellite &
-exec /usr/bin/nm-applet &
-exec /usr/bin/gnome-sound-applet &
